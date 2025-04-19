@@ -1,56 +1,63 @@
+/* General Styles */
 body {
-    background-color: #f0f8ff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    text-align: center;
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
+header h1 {
+    margin: 0;
 }
 
 nav a {
     color: white;
     margin: 0 15px;
-    font-size: 1.2rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #ff7e5f;
+    text-decoration: underline;
 }
 
+/* Page Sections */
 section {
-    margin: 50px 0;
     padding: 20px;
-    border: 2px solid #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section#home {
-    background-color: #ffebcd;
-}
-
-section#about {
-    background-color: #ffe4b5;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 3rem;
+h2 {
     color: #333;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

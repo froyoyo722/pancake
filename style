@@ -1,29 +1,31 @@
-/* Reset some default spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Hero full-screen image */
+body {
+  font-family: Arial, sans-serif;
+}
+
 .hero {
-  background-image: url('Banned book.jpg');
+  height: 100vh;
+  background-image: url("bb.jpg"); /* <-- change to match your file name */
   background-size: cover;
   background-position: center;
-  height: 100vh;
   position: relative;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-text {
@@ -31,41 +33,55 @@
   z-index: 1;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-size: 4rem;
-  letter-spacing: 3px;
+  font-weight: bold;
 }
 
-.hero-text p {
+.hero p {
   font-size: 1.5rem;
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
 
-.arrow {
-  margin-top: 30px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+  animation: bounce 2s infinite;
 }
 
-/* Info section that fades in as you scroll */
-.info {
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.info-section {
   padding: 80px 20px;
   background-color: #fff;
+  color: #222;
   text-align: center;
 }
 
-.info h2 {
+.info-section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
-.info p {
+.info-section p {
+  max-width: 700px;
+  margin: 0 auto 1rem;
   font-size: 1.1rem;
-  margin-bottom: 15px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.6;
 }
+
 
 

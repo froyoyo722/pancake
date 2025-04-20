@@ -12,11 +12,19 @@
         margin: 0;
         padding: 0;
     }
+
+    html, body {
+        height: 100%;
+        overflow: hidden;
+    }
+
     .background-image {
         background-image: url('./images.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+
+        position: absolute;
+        inset: 0;
 
         display: flex;
         justify-content: center;

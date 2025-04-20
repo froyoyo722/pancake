@@ -12,6 +12,54 @@ section {
 }
 
 .hero {
+.hero-split {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-right {
+  background-color: #ffcaa6; /* peach color similar to the screenshot */
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-right h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+  background: repeating-linear-gradient(white, white 10px, transparent 10px, transparent 20px);
+  display: inline-block;
+  padding: 10px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: black;
+}
+
   background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
   height: 100vh;
   color: white;

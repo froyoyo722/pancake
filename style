@@ -1,87 +1,64 @@
+/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body and Font Styling */
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.hero {
-  height: 100vh;
-  background-image: url("bb.jpg"); /* <-- change to match your file name */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+/* Cover Image Styling */
+.cover-image {
+    background-image: url('bb.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+.cover-image h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text {
-  position: relative;
-  z-index: 1;
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+section p, section ul {
+    font-size: 1.2rem;
 }
 
-.scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: white;
-  z-index: 1;
-  text-decoration: none;
-  animation: bounce 2s infinite;
+/* List Styling for Examples */
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px);
-  }
+ul li {
+    margin: 10px 0;
 }
 
-.info-section {
-  padding: 80px 20px;
-  background-color: #fff;
-  color: #222;
-  text-align: center;
-}
-
-.info-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.info-section p {
-  max-width: 700px;
-  margin: 0 auto 1rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
 
 
 

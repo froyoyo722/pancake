@@ -15,29 +15,25 @@
 
     html, body {
         height: 100%;
-        overflow: hidden;
+        width: 100%
+    }
+
+    .background {
+        background-image: url('./books.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
         position: relative;
     }
 
-    .fullscreen-image {
-        width: 100%;
-        height: 100%
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left 0;
-        z-index: 0;
-    }
 
-    .button-container {
+    .center-button {
         position: absolute;
         top: 50%
         left: 50%
         transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    .center-button {
         padding: 15px 30px;
         font-size: 18px;
         background-color: rgba(0,0,0,0.7);
@@ -55,8 +51,7 @@
 
 </style>
 <body>
-    <img src="./books.png" alt="Banned Books Cover" class="fullscreen-img">
-    <div class="button-container">
+    <div class="background">
         <a href="about.html" class="center-button">Learn More</a>
     </div>
 

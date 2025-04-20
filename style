@@ -15,7 +15,7 @@ body {
 
 /* Cover Image Styling */
 .cover-image {
-    background-image: url('bb.jpg'); /* Replace with your image path */
+    background-image: url('Banned book.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full screen height */

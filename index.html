@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <title>Banned Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 <body>
 <div class="background-image"></div>
 
@@ -46,11 +49,32 @@
         background-color: rgba(255, 255, 255, 0.2);
     }
 
+    .top-title, .bottom-title {
+        position: absolute;
+        left: 50%
+        transform: translateX(-50%);
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        font-size: 40px;
+        z-index: 2;
+    }
+
+    .top-title {
+        top: 30px;
+    }
+
+    .bottom-title{
+        bottom: 30px;
+    }
+
 </style>
+</head>
 <body>
     <div class="background">
+        <div class="top-title">READ BANNED BOOKS</div>
 
         <a href="about.html" class="center-button">Learn More</a>
+        <div class="bottom-title">USE YOUR VOICE</div>
     </div>
 
 </body>
